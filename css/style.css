@@ -261,7 +261,7 @@ table {
 
  .benefids_card {
      grid-column: span 1;
-     margin-bottom: 130px;
+     margin-bottom: 100px;
  }
   
 
@@ -290,8 +290,8 @@ table {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 39px;
-    max-width: 317px;
-    margin-left: 55px;
+    
+    
     
 }
 
@@ -317,6 +317,7 @@ table {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 36px;
     
     
 }
@@ -330,12 +331,10 @@ table {
 
 .places_view-all {
     font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     margin-right: 180px;
     color: #006DFE;
+    padding-right: 59px;
     text-decoration: none;
     background: url(../img/svg/arow..svg)no-repeat right center;
 
@@ -344,3 +343,80 @@ table {
 .places_view-all:hover, .places_view-all:focus {
 opacity: .65;
 }
+
+.places_cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+
+}
+
+.places_card {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.places_cards:hover .place_card-pic {
+    transform: scale (1.05);
+}
+
+
+.places_card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21,24,36,0.4);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 2;
+
+}
+
+.place_card-title {
+    font-family: 'Lato';
+   font-size: 50px;
+   line-height: 60px;
+   color: white; 
+   position: absolute;
+   bottom: 27px;
+   left: 29px;
+   z-index: 3;
+}
+
+.places_card_size_lg {
+    grid-column:span 3;
+}
+
+.places_card_size_sm {
+    grid-column:span 2;
+}
+
+.place_card-pic {
+    width: 100%;
+    transition: 0.15s all;
+    
+}
+
+.places_card_size_lg {
+object-fit: cover;
+height: 283px;
+}
+
+.places_card_size_sm {
+    object-fit: cover;
+    height: 354px;
+    }
+
+
+.places_card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 100%;
+    z-index: 4;
+}
+
