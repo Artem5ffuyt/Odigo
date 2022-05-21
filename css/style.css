@@ -154,6 +154,7 @@ table {
     background: url(../img/svg/hero-intro.jpg);
     background-size: cover;
     padding-top: 263px;
+    padding-bottom:  223px;
   }
 
   .wrapper2 {
@@ -420,3 +421,19 @@ height: 283px;
     z-index: 4;
 }
 
+/*-- tours start--*/
+.tours {
+    margin-bottom: 139px;
+
+}
+
+.tours_tour {
+    display: grid;
+    grid-template-columns: (repeat 2, 1fr);
+    grid-gap: 0 108px;
+    
+}
+
+
+
+/*-- tours end--*/
