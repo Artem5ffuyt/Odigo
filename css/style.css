@@ -313,6 +313,12 @@ table {
     background: url(../img/svg/arow..svg) no-repeat right center;
 }
 
+
+
+
+
+
+
 .places_caption {
     display: flex;
     flex-wrap: wrap;
@@ -349,12 +355,14 @@ opacity: .65;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
+    margin-bottom: 100px;
 
 }
 
 .places_card {
     position: relative;
     overflow: hidden;
+    
 
 }
 
@@ -430,10 +438,65 @@ height: 283px;
 .tours_tour {
     display: grid;
     grid-template-columns: (repeat 2, 1fr);
-    grid-gap: 0 108px;
+    grid-gap: 0 50px;
+    align-items: center;
+    margin-bottom: 77px;
+    display: flex;
+
+}
+
+.wrapper_full2 {
+    max-width: 1268px;
+    margin-left: 130px;
+}
+
+.tour_info {
+    padding-left: 47px;
+    max-width: 1268px;
+    align-items: centr;
     
+}
+
+.tour_title {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+    
+}
+
+.tour_desc {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+
+.tour_more {
+    display: inline-block;
+    padding-right: 59px;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    margin-left: 55px;
+    text-decoration: none;
+    background: url(../img/svg/arow..svg) no-repeat  95% center;
+    transition: .02s all; 
+    margin-top: 50px;
 }
 
 
 
+
 /*-- tours end--*/
+
+
+
+/*--tours end--*/
+
+
+/*--top start--*/
