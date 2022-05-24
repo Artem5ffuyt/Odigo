@@ -166,6 +166,7 @@ table {
   .wrapper-full {
     max-width: 1262px;
     margin: 0 auto;
+    
   }
 
   
@@ -429,10 +430,19 @@ height: 283px;
     z-index: 4;
 }
 
-/*-- tours start--*/
+
+
+
+
+
+/*-- tours start------------------*/
 .tours {
     margin-bottom: 139px;
 
+}
+
+.tour_card-thumb {
+    margin-top: 70px;
 }
 
 .tours_tour {
@@ -453,7 +463,7 @@ height: 283px;
 .tour_info {
     padding-left: 47px;
     max-width: 1268px;
-    align-items: centr;
+    align-items:centr;
     
 }
 
@@ -488,15 +498,147 @@ line-height: 24px;
     transition: .02s all; 
     margin-top: 50px;
 }
+/*-- tours end-----------------------*/
 
 
 
 
-/*-- tours end--*/
+
+
+
+/*--top start--*/
+
+.top {
+    margin-bottom: 86px;
+
+}
+
+
+.top_title {
+    margin-bottom: 65px;
+    margin-left: 180px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+
+}
+
+.top_cards {
+    
+}
+
+
+.wrapper-full3 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+
+
+.top_card-pic {
+    position: relative;
+    margin-bottom: 45px;
+    
+}
+
+
+
+.top_card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+
+.top_card-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto 0 0;
+    color: #FFFFFF;
+   
+}
+
+    .top_card-likes {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: url(../img/svg/like.svg) no-repeat right;
+    margin-right: 20px;
+}
+
+.top_card-likes-value {
+    margin-right: 16px;
+}
+
+   
+.top_card-coments {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: url(../img/svg/Shape\ \(5\).svg) no-repeat right;
+    padding-right: 23;
+    
+}
+
+.top_card-coments-value {
+    margin-right: 16px;
+}
+
+.top_card-desc {
+    width: 370px;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+
+}
+
+
+.top_card-more {
+    color: #FFFFFF;
+    padding: 12px 19px;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    background: #006DFE;
+    margin-bottom: 30%
+}
+
+.top_card-more:hover,.top_card-more:focus,.top_card-more:active {
+    background: #0e66da;
+}
+
+
+
+
+
+/* identical to box he
+    }
+
 
 
 
 /*--tours end--*/
-
-
-/*--top start--*/
