@@ -74,11 +74,22 @@ table {
          url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+
+
+
+
+
 /*GOOOOOOOOOO*/
 
   html {
       box-sizing: border-box;
-  }
+ }
+
+  *,*::before,*::after {
+    box-sizing: inherit;
+ }
+
+
   .body {
     font-family: 'Lato';
     font-style: normal;
@@ -93,13 +104,10 @@ table {
       height: auto;
   }
 
-  *,*::before,*::after {
-      box-sizing: inherit;
-  }
-
   .wrapper1 {
       max-width: 1060px;
       margin: 0 auto;
+      padding: 0 15px;
   }
 
 
@@ -109,6 +117,13 @@ table {
       top: 0;
       left: 0;
       width: 100%;
+      transition: .2s linear;
+      padding-bottom: 20px;
+      z-index: 999;
+  }
+
+  .header_active {
+      background: #0E1D28;
   }
 
   .header__wrapper {
@@ -146,8 +161,39 @@ table {
     background-size: cover;
  }
 
+ .header_burger {
+     display: none;
+     width: 40px;
+     height: 28px;
+     position: relative;
+ }
+
+ .burger_line {
+     display: block;
+     width: 100%;
+     height: 2px;
+     background-color: #fff;
+     position: absolute;
+     left: 0;
+ }
+
+ .burger_line_first {
+     top: 0;
+
+ }
+
+ .burger_line_second {
+     top: 50%;
+     transform: translateY(-50%);
+ }
+
     /*  Heder style end */
 
+
+
+
+
+   /*  intro style start */
     
   .intro {
     height: 120vh;
@@ -160,12 +206,14 @@ table {
   .wrapper2 {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
     
   }
 
   .wrapper-full {
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
     
   }
 
@@ -526,9 +574,6 @@ line-height: 24px;
 
 }
 
-.top_cards {
-    
-}
 
 
 .wrapper-full3 {
@@ -631,14 +676,103 @@ line-height: 24px;
     background: #0e66da;
 }
 
+/*--top end--*/
+
+
+
+/*--video start--*/
+
+.videos {
+    width: 100%;
+}
+
+.videos_wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.video_item {
+    padding-top: 56.25%;
+
+}
+
+.video_element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*--video end--*/
+
+
+/*--footer styles--*/
+
+.footer {
+    background:#0E1D28;
+    padding: 119px 0;
+
+}
+
+.footer_item {
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 70px;
+    margin-right:70px;
+}
+
+.footer_logo {
+    width: 50%;
+    
+
+}
+
+.footer_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.footer_menu-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer_menu-linc {
+    font-family: 'Lato';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer_menu-linc:hover, .footer_menu-linc:focus, .footer_menu-linc:active {
+    opacity: .75;
+}
 
 
 
 
-/* identical to box he
+/*--footer styles end--*/
+
+
+/*--media start--*/
+
+@media screen and (max-width:767px) {
+    .header_burger {
+        display: block;
     }
+}
 
-
-
-
-/*--tours end--*/
+/*--media end--*/
