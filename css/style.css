@@ -126,6 +126,8 @@ table {
       background: #0E1D28;
   }
 
+
+
   .header__wrapper {
       display: flex;
       flex-wrap:wrap;
@@ -185,6 +187,10 @@ table {
  .burger_line_second {
      top: 50%;
      transform: translateY(-50%);
+ }
+
+ .burger_line_third {
+     bottom: 0;
  }
 
     /*  Heder style end */
@@ -769,9 +775,84 @@ line-height: 24px;
 
 /*--media start--*/
 
+@media screen and (max-whids:960) {
+    .earch-form_fieled {
+        margin-bottom: 25px;
+    }
+    
+}
+
 @media screen and (max-width:767px) {
     .header_burger {
         display: block;
+    }
+    .benefids_kard {
+        padding: 0 15px;
+    }
+    .benefits_title {
+        padding: 45px 15px;
+    }
+
+
+
+    .header__nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%);
+        transform: .2s all linear;
+    }
+    
+
+    .header__nav_active {
+        transform: translateX(0);
+    }
+
+    .header__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .header__item:last-child {
+        margin-bottom: 0;
+    }
+    .header__link {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .heder_nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        
+    }
+
+    .header_nav-close-line {
+        width: 100%;
+        display: block;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        
+    }
+
+    .header_nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
     }
 }
 
